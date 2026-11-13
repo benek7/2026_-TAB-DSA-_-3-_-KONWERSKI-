@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6A07212-2050-54C6-4786-76BED739B145" name="Wyciag">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="9A89F4C0-3E46-5B29-6314-64D596648898">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>A2D6F557-E382-A132-5BB6-DEB075803F41</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwa" id="D8F914FF-6FD6-F426-97D4-E64BCFE692AA">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>61B008D1-CF9C-2895-2549-C87CF436FBD0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="wysokosc" id="033BE2A2-0C7F-4705-F3A2-D137EF1184B0">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>A2D6F557-E382-A132-5BB6-DEB075803F41</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="godzinaOtwarcia" id="3F49777D-6731-D189-51F2-B16EE1E11D38">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>862AB8D6-DEC1-616B-4011-C4218AD294D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="godzinaZamkniecia" id="360B71F9-B579-2E7F-C290-6D05361DF877">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>862AB8D6-DEC1-616B-4011-C4218AD294D2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="czyCzynny" id="4E813334-C36D-A4FD-7B11-CC4230B9E6EB">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<domain>0ACFB7F3-8074-0E0D-C00F-CF59B68F842A</domain>
+<listOfValues>
+<valueDef value="0" description=""/>
+<valueDef value="1" description=""/>
+</listOfValues>
+<defaultValue>1</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F0EE5C7-5001-BFCE-B7BA-21F0BDA932E3" name="Wyciag_PK">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A89F4C0-3E46-5B29-6314-64D596648898"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

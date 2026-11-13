@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43426FD3-97B5-1867-EC6E-9D44DBAA9F85" name="Przejazd">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="562D37F9-DF07-E2DF-050D-D5EBF85EAF0D">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>A2D6F557-E382-A132-5BB6-DEB075803F41</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="czasOdbicia" id="483C5108-6C3B-B086-2B05-2AE9CC594E96">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>D1AEDCCD-298A-2471-1167-F59F3E03BD22</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dokument_id" id="39D0B57A-36E7-5376-EFD2-E2E659CD70BB">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>A2D6F557-E382-A132-5BB6-DEB075803F41</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1DC0C066-A149-D10A-35BE-373601BC9928" referredColumn="2BE18BE6-57F0-0FE8-AE8D-232837462EBE"/>
+</associations>
+</Column>
+<Column name="wyciag_id" id="1BBA0256-097A-1DFC-A3EF-DB0AB86C6D8F">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>A2D6F557-E382-A132-5BB6-DEB075803F41</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="49240E31-B692-63B1-48CC-159F4782EF5C" referredColumn="9A89F4C0-3E46-5B29-6314-64D596648898"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EAD14D1-C294-D8B7-3E6D-18E602FB1801" name="Przejazd_PK">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="562D37F9-DF07-E2DF-050D-D5EBF85EAF0D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8FBC8304-3049-AFC0-3277-BA7190D481B2" name="fk_przejazd_dokument">
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39D0B57A-36E7-5376-EFD2-E2E659CD70BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="95AF7F96-B794-BA4D-F8AD-AE89171F10A5" name="fk_przejazd_wyciag">
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BBA0256-097A-1DFC-A3EF-DB0AB86C6D8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="stacja_narciarska" id="CE55F311-765E-56CA-1B4B-B466ABB0F123" version="3.5">
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:33:04 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CE55F311-765E-56CA-1B4B-B466ABB0F123</designId>
+</OSDM_Design>

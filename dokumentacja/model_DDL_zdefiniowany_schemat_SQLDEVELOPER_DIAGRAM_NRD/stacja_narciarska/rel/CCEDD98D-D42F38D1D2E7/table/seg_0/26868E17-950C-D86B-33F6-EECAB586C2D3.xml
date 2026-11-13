@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="26868E17-950C-D86B-33F6-EECAB586C2D3" name="Karnet">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dokument_id" id="E589C49B-A797-3482-A775-7CDCF53F4D2C">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>A2D6F557-E382-A132-5BB6-DEB075803F41</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8099DFB7-1714-AB0F-8252-7B69DF2A5F47" referredColumn="2BE18BE6-57F0-0FE8-AE8D-232837462EBE"/>
+</associations>
+</Column>
+<Column name="waznyDo" id="7165249F-FC96-0CA3-0F81-CA437780AE34">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>D1AEDCCD-298A-2471-1167-F59F3E03BD22</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00E6F058-69C2-EA1A-FD9F-1B808AA87F8A" name="Karnet_PK">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E589C49B-A797-3482-A775-7CDCF53F4D2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CD2D246-283C-723F-38B8-339397378C38" name="fk_karnet_dokument">
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E589C49B-A797-3482-A775-7CDCF53F4D2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="CCEDD98D-423E-D3F8-FE08-D42F38D1D2E7" mainViewID="67397810-E2CC-72C2-DBAC-E72EF628AB98">
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:33:05 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>stacja_narciarska.sql</fileName>
+<pathName>C:\Users\ben\Desktop\studia\sem5\BD\oracle sql developer</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>
