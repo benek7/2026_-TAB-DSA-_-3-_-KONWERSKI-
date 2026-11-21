@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8099DFB7-1714-AB0F-8252-7B69DF2A5F47" containerWithKeyObject="26868E17-950C-D86B-33F6-EECAB586C2D3" localFKIndex="1CD2D246-283C-723F-38B8-339397378C38" name="fk_karnet_dokument">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<referredTableLongName>DokumentPrzejazdu</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>52F3AE12-556D-6A27-75EB-8272A14FC6F5</referredTableID>
+<keyObject>7B49F087-8853-EC4C-DE31-E3BC9D27A27B</keyObject>
+<referredKeyID>7B49F087-8853-EC4C-DE31-E3BC9D27A27B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

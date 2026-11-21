@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9F550D4E-126B-83D8-0C39-443E4D86EAD2" containerWithKeyObject="91E1892A-71D5-3F37-CAD3-B8124F4B4805" localFKIndex="31D5A3E4-8FF8-3C34-6BC0-524222CA62EB" name="fk_cennik_slownik">
+<sourceDDLFile>stacja_narciarska.sql</sourceDDLFile>
+<createdBy>ben</createdBy>
+<createdTime>2026-11-13 19:34:18 UTC</createdTime>
+<ownerDesignName>stacja_narciarska</ownerDesignName>
+<referredTableLongName>SlownikTypow</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7C05AB7C-7748-9D30-1F8A-BB3860E0CE8E</referredTableID>
+<keyObject>0BDCC332-197F-6B67-FAC6-8D50685383FC</keyObject>
+<referredKeyID>0BDCC332-197F-6B67-FAC6-8D50685383FC</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
