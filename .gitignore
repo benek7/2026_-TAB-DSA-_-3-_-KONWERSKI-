@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+mysql-data/
+mysql8-data/
+.env
+.venv/
+venv/
+.vscode/
+*.log
