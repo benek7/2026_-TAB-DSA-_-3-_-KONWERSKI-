@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.storage.oracle.v20c.StorageDesignOraclev20c>
+   <object objectType="User" objectID="MDSYS" name="MDSYS" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" propertyParentId="01F6E6D1-3988D1813575"/>
+   <object objectType="User" objectID="PUBLIC" name="PUBLIC" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" propertyParentId="01F6E6D1-3988D1813575"/>
+   <object objectType="SType" objectID="47E390DE-0671-C4B1-8428-0F45CBEE18F8" name="SDO_GEOMETRY" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.StructuredTypeProxyOraclev10g" propertyParentId="01F6E6D1-3988D1813575"/>
+   <object objectType="SType" objectID="F72C39E0-D1CA-8821-2AD7-A1E95A37D3D1" name="XMLTYPE" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v10g.StructuredTypeProxyOraclev10g" propertyParentId="01F6E6D1-3988D1813575"/>
+   <object objectType="Table" objectID="26868E17-950C-D86B-33F6-EECAB586C2D3" name="Karnet" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" propertyParentId="01F6E6D1-3988D1813575"/>
+   <object objectType="Table" objectID="43426FD3-97B5-1867-EC6E-9D44DBAA9F85" name="Przejazd" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" propertyParentId="01F6E6D1-3988D1813575"/>
+   <object objectType="Table" objectID="52F3AE12-556D-6A27-75EB-8272A14FC6F5" name="DokumentPrzejazdu" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" propertyParentId="01F6E6D1-3988D1813575"/>
+   <object objectType="Table" objectID="76DA7EAB-55EE-49F7-0590-73EFB5635E63" name="Uzytkownik" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" propertyParentId="01F6E6D1-3988D1813575"/>
+   <object objectType="Table" objectID="7C05AB7C-7748-9D30-1F8A-BB3860E0CE8E" name="SlownikTypow" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" propertyParentId="01F6E6D1-3988D1813575"/>
+   <object objectType="Table" objectID="919569F5-50F8-F93B-C22E-1180F7DF7A25" name="Bilet" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" propertyParentId="01F6E6D1-3988D1813575"/>
+   <object objectType="Table" objectID="91E1892A-71D5-3F37-CAD3-B8124F4B4805" name="Cennik" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" propertyParentId="01F6E6D1-3988D1813575"/>
+   <object objectType="Table" objectID="D6A07212-2050-54C6-4786-76BED739B145" name="Wyciag" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" propertyParentId="01F6E6D1-3988D1813575"/>
+</oracle.dbtools.crest.model.design.storage.oracle.v20c.StorageDesignOraclev20c>

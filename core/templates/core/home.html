@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masz X zgłoszeń</title>
+    <link rel="stylesheet" href="{% static 'core/dashboard.css' %}">
+</head>
+<body>
+    <div class="app-shell">
+        <header class="topbar">
+            <h1>Masz {{ lifts|length }} wyciągów</h1>
+            <div class="top-actions">
+                <button class="logo-button" type="button">Logo</button>
+                <a class="login-link" href="#">E-mail z logowania</a>
+                <button class="avatar" type="button">U</button>
+            </div>
+        </header>
+
+        <div class="workspace">
+            <aside class="sidebar">
+                <section>
+                    <h2>Zarządzanie</h2>
+                    <ul>
+                        <li><a href="/admin/core/wyciag/">Wyciągami</a></li>
+                        <li><a href="/admin/core/cennik/">Cennikiem</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Moderacja</h2>
+                    <ul>
+                        <li><a href="/admin/core/uzytkownik/">Użytkowników</a></li>
+                        <li><a href="/admin/core/dokumentprzejazdu/">Archiwum</a></li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Generowanie raportów</h2>
+                    <ul>
+                        <li><a href="#">Zarządczych</a></li>
+                        <li><a href="#">Operacyjnych</a></li>
+                    </ul>
+                </section>
+            </aside>
+
+            <main class="content">
+                <section class="tickets">
+                    {% for lift in lifts %}
+                    <article class="ticket">
+                        <div class="ticket-row">
+                            <span class="ticket-name">{{ lift.nazwa }}</span>
+                            <div class="ticket-fields">
+                                <span class="status-label">Stan</span>
+                                <button class="status active" type="button">{% if lift.czyczynny %}Aktywny{% else %}Nieczynny{% endif %}</button>
+                                <span class="level-label">Poziom</span>
+                                <button class="status level" type="button">{{ lift.wysokosc }} m</button>
+                            </div>
+                        </div>
+                        <div class="ticket-actions">
+                            <button class="action accept" type="button">Zaakceptuj</button>
+                            <button class="action reject" type="button">Odrzuć</button>
+                            <button class="action details" type="button">{{ lift.godzinaotwarcia|time:"H:i" }}–{{ lift.godzinazamkniecia|time:"H:i" }}</button>
+                        </div>
+                    </article>
+                    {% empty %}
+                    <article class="ticket empty-ticket">
+                        <strong>Brak wyciągów w bazie danych</strong>
+                    </article>
+                    {% endfor %}
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
