@@ -9,3 +9,4 @@ mysql8-data/
 venv/
 .vscode/
 *.log
+.vs/

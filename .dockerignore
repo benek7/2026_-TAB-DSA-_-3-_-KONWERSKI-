@@ -1,0 +1,10 @@
+.git/
+.vs/
+venv/
+__pycache__/
+*.pyc
+db.sqlite3
+dokumentacja/
+projekt_stacja_narciarska/
+Dockerfile
+.dockerignore

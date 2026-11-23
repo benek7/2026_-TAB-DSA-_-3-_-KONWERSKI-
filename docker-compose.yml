@@ -1,0 +1,39 @@
+services:
+  db:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: narciarz
+      MYSQL_USER: narciarz
+      MYSQL_PASSWORD: narciarz123
+      MYSQL_ROOT_PASSWORD: root123
+    ports:
+      - "3307:3306"          # na Twoim PC port 3307 (3306 zajęty przez lokalnego MySQL)
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-uroot", "-proot123"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  web:
+    build: .
+    image: narciarzprojektbd/narciarz:1.0  
+    ports:
+      - "8000:8000"
+    environment:
+      DB_HOST: db
+      DB_PORT: "3306"
+      DB_NAME: narciarz
+      DB_USER: narciarz
+      DB_PASSWORD: narciarz123
+      DJANGO_ALLOWED_HOSTS: localhost,127.0.0.1
+      DJANGO_SUPERUSER_USERNAME: admin
+      DJANGO_SUPERUSER_PASSWORD: admin123
+      DJANGO_SUPERUSER_EMAIL: admin@example.com
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  mysql_data:
