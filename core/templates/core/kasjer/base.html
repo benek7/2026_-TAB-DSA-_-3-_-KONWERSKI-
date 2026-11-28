@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Panel Kasjera{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'core/dashboard.css' %}">
+</head>
+<body>
+    <div class="app-shell">
+        <header class="topbar">
+            <h1>{% block header_title %}Panel Kasjera{% endblock %}</h1>
+            <div class="top-actions">
+                <button class="logo-button" type="button">Logo</button>
+                <a class="login-link" href="#">E-mail z logowania</a>
+                <button class="avatar" type="button">U</button>
+            </div>
+        </header>
+
+        <div class="workspace">
+            <aside class="sidebar">
+    		<section>
+        	<h2>Menu główne</h2>
+        	<ul>
+            		<li><a href="{% url 'kasjer_home' %}">Bilety</a></li>
+            		<li><a href="{% url 'kasjer_wydruk' %}">Wydruk</a></li>
+        	</ul>
+   		</section>
+		</aside>
+
+            <main class="content">
+                {% block content %}{% endblock %}
+            </main>
+        </div>
+    </div>
+</body>
+</html>

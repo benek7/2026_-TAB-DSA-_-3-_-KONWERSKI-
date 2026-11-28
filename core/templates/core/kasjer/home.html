@@ -1,0 +1,44 @@
+{% extends "core/kasjer/base.html" %}
+
+{% block title %}Kasjer - Bilety{% endblock %}
+{% block header_title %}Masz X nowych wiadomości{% endblock %}
+
+{% block content %}
+<section style="width: 100%; max-width: 820px; margin: 0 auto;">
+    <div style="background: #cfd6de; padding: 20px; border-radius: 6px; display: flex; flex-direction: column; gap: 16px;">
+        
+        <article class="ticket" style="margin: 0;">
+            <div class="ticket-row" style="background: #fff; padding: 10px 14px; border-radius: 12px; display: flex; justify-content: space-between; font-size: 13px; flex-wrap: wrap; gap: 8px;">
+                <span><strong>Bilet Super Delux</strong></span>
+                <span>21 zjazdów</span>
+                <span>12.12.2021</span>
+                <span>Opłacone: Tak</span>
+                <span>Narciarz: test1</span>
+                <span>Stan konta: Neutralny</span>
+            </div>
+            <div class="ticket-actions" style="display: flex; justify-content: space-between; gap: 12px; margin-top: 10px;">
+                <button class="action accept" type="button" style="flex: 1; cursor: pointer;">Zaakceptuj</button>
+                <button class="action reject" type="button" style="flex: 1; cursor: pointer;">Odrzuć</button>
+                <button class="action" type="button" style="flex: 1; cursor: pointer; background: #6e6e6e; color: #fff;">Zgłoś</button>
+            </div>
+        </article>
+
+        <article class="ticket" style="margin: 0;">
+            <div class="ticket-row" style="background: #fff; padding: 10px 14px; border-radius: 12px; display: flex; justify-content: space-between; font-size: 13px; flex-wrap: wrap; gap: 8px;">
+                <span><strong>Bilet Super Delux</strong></span>
+                <span>12 zjazdów</span>
+                <span>12.12.2021</span>
+                <span>Opłacone: Nie</span>
+                <span>Narciarz: troll</span>
+                <span>Stan konta: 1 Zgłoszenie</span>
+            </div>
+            <div class="ticket-actions" style="display: flex; justify-content: space-between; gap: 12px; margin-top: 10px;">
+                <button class="action accept" type="button" style="flex: 1; cursor: pointer;">Zaakceptuj</button>
+                <button class="action reject" type="button" style="flex: 1; cursor: pointer;">Odrzuć</button>
+                <button class="action" type="button" style="flex: 1; cursor: pointer; background: #6e6e6e; color: #fff;">Zgłoś</button>
+            </div>
+        </article>
+
+    </div>
+</section>
+{% endblock %}

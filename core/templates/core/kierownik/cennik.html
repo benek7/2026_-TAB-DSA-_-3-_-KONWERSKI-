@@ -1,0 +1,35 @@
+{% extends "core/kierownik/base.html" %}
+
+{% block title %}Cennik{% endblock %}
+{% block header_title %}Zarządzanie cennikiem ({{ pozycje|length }}){% endblock %}
+
+{% block content %}
+<section class="tickets">
+    {% for pozycja in pozycje %}
+    <article class="ticket">
+        <div class="ticket-row">
+            <span class="ticket-name">{{ pozycja.slowniktypow }}</span>
+            <div class="ticket-fields">
+                <span class="status-label">Cena</span>
+                <button class="status active" type="button">{{ pozycja.cena }} zł</button>
+                <span class="level-label">Ważny</span>
+                <button class="status level" type="button">
+                    {{ pozycja.obowiazujeod|date:"d.m.Y H:i" }} – {{ pozycja.obowiazujedo|date:"d.m.Y H:i" }}
+                </button>
+            </div>
+        </div>
+        <div class="ticket-actions">
+            <form method="post" action="{% url 'zmien_cene' pozycja.pk %}" style="display: contents;">
+                {% csrf_token %}
+                <input type="number" step="0.01" min="0" name="cena" value="{{ pozycja.cena|stringformat:'.2f' }}" style="padding: 6px 10px; border-radius: 12px; border: 1px solid #999; width: 100px;">
+                <button class="action accept" type="submit">Zapisz cenę</button>
+            </form>
+        </div>
+    </article>
+    {% empty %}
+    <article class="ticket empty-ticket">
+        <strong>Brak pozycji w cenniku</strong>
+    </article>
+    {% endfor %}
+</section>
+{% endblock %}

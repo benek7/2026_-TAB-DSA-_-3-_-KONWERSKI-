@@ -1,0 +1,35 @@
+{% extends "core/kierownik/base.html" %}
+
+{% block title %}Kierownik - Raporty zarządcze{% endblock %}
+{% block header_title %}Masz X zgłoszeń{% endblock %}
+
+{% block content %}
+<section style="width: 100%; max-width: 820px; margin: 0 auto; padding: 24px;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-bottom: 32px;">
+        <div>
+            <h3 style="margin: 0 0 10px 0; font-weight: normal;">Bilety /hr</h3>
+            <div style="background: #cfd6de; height: 220px; display: flex; align-items: center; justify-content: center; font-size: 14px;">
+                Wykres (Y = ilość, X = czas)
+            </div>
+        </div>
+        <div>
+            <h3 style="margin: 0 0 10px 0; font-weight: normal;">Ilość działających bramek</h3>
+            <div style="background: #cfd6de; height: 220px; display: flex; align-items: center; justify-content: center; font-size: 14px;">
+                Wykres (Y = ilość, X = czas)
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; align-items: flex-end; justify-content: center; gap: 40px;">
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+            <label><input type="checkbox" name="bilety_hr"> Bilety /hr</label>
+            <label><input type="checkbox" name="ilosc_bramek"> Ilość bramek</label>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+            <label><input type="checkbox" name="pdf"> Pdf</label>
+            <label><input type="checkbox" name="druk"> Druk</label>
+        </div>
+        <button class="action accept" type="button" style="min-width: 180px; cursor: pointer;">Generuj raport</button>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "core/kierownik/base.html" %}
+
+{% block title %}Kierownik - Archiwum{% endblock %}
+{% block header_title %}Masz X zgłoszeń{% endblock %}
+
+{% block content %}
+<section style="width: 100%; max-width: 820px; margin: 0 auto;">
+    <div style="background: #cfd6de; padding: 24px; border-radius: 6px; display: flex; gap: 24px; align-items: flex-end;">
+        <div style="flex: 1; display: flex; flex-direction: column; gap: 16px;">
+            <div>
+                <label for="archive-user" style="display: block; font-size: 13px; margin-bottom: 4px;">Username</label>
+                <select id="archive-user" style="width: 100%; padding: 10px; border: none; background: #fff; font-size: 14px;">
+                    <option value="">-- Wybierz użytkownika --</option>
+                    {% for user in uzytkownicy %}
+                    <option value="{{ user.pk }}">{{ user }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div style="background: #b5b5b5; min-height: 220px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; font-size: 15px;">
+                Archiwum użytkownika z możliwością przełączenia na aktywne dokumenty przejazdu
+            </div>
+        </div>
+
+        <div style="width: 220px; display: flex; flex-direction: column; gap: 10px;">
+            <button class="action accept" type="button" style="width: 100%; cursor: pointer;">Usuń dokument przejazdu</button>
+            <button class="action accept" type="button" style="width: 100%; cursor: pointer;">Zgłoś</button>
+            <button class="action accept" type="button" style="width: 100%; cursor: pointer;">Archiwizuj</button>
+        </div>
+    </div>
+</section>
+{% endblock %}
